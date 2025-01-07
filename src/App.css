@@ -1,0 +1,109 @@
+.root {
+    padding: 20px 30px;
+    color: var(--dark-theme-text-color);
+    background-color: var(--dark-theme-bg-color);
+    transition: color 0.3s linear, background-color 0.3s linear;
+    width: calc(100vw - 60px);
+}
+
+.root > section {
+    max-width: 1050px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.lastUpdated {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.intro {
+    margin-bottom: 2em;
+}
+
+.description {
+    background-color: var(--dark-theme-secondary-bg-color);
+    transition: background-color 0.3s linear;
+    padding: 0.7em 1em;
+    border-left: 4px solid var(--dark-theme-primary-color);
+    font-size: 0.95em;
+    border-radius: 4px;
+}
+
+.url {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.sectionTitle {
+    border-bottom: 1px solid var(--dark-theme-border-color);
+    padding-bottom: 0.5em;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.headings {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 0.5em;
+}
+
+.heading {
+    color: var(--dark-theme-primary-color);
+    font-weight: 700;
+}
+
+.subsectionKey {
+    font-size: 0.85em;
+    line-height: 1.8;
+    font-weight: 700;
+}
+
+.subsectionValue {
+    margin-bottom: 1em;
+}
+
+.shortPointsSeparator {
+    margin: 0 5px;
+    color: var(--dark-theme-border-color);
+}
+
+/**
+ * Light theme
+ */
+
+.light.root {
+    color: var(--light-theme-text-color);
+    background-color: var(--light-theme-bg-color);
+}
+
+.light .description {
+    background-color: var(--light-theme-secondary-bg-color);
+    border-color: var(--light-theme-primary-color);
+}
+
+.light .heading {
+    color: var(--light-theme-primary-color);
+}
+
+.light .sectionTitle {
+    border-color: var(--light-theme-border-color);
+}
+
+.light .shortPointsSeparator {
+    color: var(--light-theme-border-color);
+}

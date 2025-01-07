@@ -1,0 +1,50 @@
+.colorThemeToggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: darkblue;
+    transition: background-color 0.15s linear;
+    cursor: pointer;
+}
+
+.colorThemeToggle:hover {
+    opacity: 0.85;
+}
+
+.colorThemeToggle--light {
+    background-color: lightblue;
+}
+
+.colorThemeToggle__darkIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    padding: 7px;
+}
+
+.colorThemeToggle__lightIcon {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 18px;
+    height: 18px;
+    padding: 6px;
+}
+
+.colorThemeToggle__knob {
+    position: absolute;
+    top: 3px;
+    left: 33px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: left 0.2s linear;
+}
+
+.colorThemeToggle--light .colorThemeToggle__knob {
+    left: 3px;
+}
