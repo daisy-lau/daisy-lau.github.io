@@ -57,14 +57,13 @@
 }
 
 .headings {
-    display: flex;
-    gap: 5px;
     margin-bottom: 0.5em;
 }
 
 .heading {
     color: var(--dark-theme-primary-color);
     font-weight: 700;
+    margin-right: 5px;
 }
 
 .subsectionKey {
@@ -77,9 +76,14 @@
     margin-bottom: 1em;
 }
 
+.shortPoint {
+    display: inline-block;
+}
+
 .shortPointsSeparator {
     margin: 0 5px;
     color: var(--dark-theme-border-color);
+    display: inline-block;
 }
 
 /**
@@ -106,4 +110,11 @@
 
 .light .shortPointsSeparator {
     color: var(--light-theme-border-color);
+}
+
+@media (max-width: 768px) {
+    .section {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(1em, auto);
+    }
 }

@@ -88,7 +88,7 @@ const renderShortPoints = (points: string[]) => {
                 return (
                     <React.Fragment key={index}>
                         <span className='shortPointsSeparator'>/</span>
-                        <span>{point}</span>
+                        <span className='shortPoint'>{point}</span>
                     </React.Fragment>
                 );
             })}
